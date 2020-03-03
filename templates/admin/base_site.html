@@ -1,0 +1,14 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block branding %}
+    <h1 id="head">
+        <img src="{% static 'img/logo.png' %}"
+             style="width:50px; height: 50px; margin-right: 10px;"> 
+             Minha Agenda
+    </h1>
+{%endblock%}
+
+{%block extrastyle%}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{%endblock%}
