@@ -47,7 +47,7 @@ def busca(request):
 
     contatos = Contato.objects.annotate(
         nome_completo=campos
-    ).filter(
+    ).filter(mostrar=True).filter(
         Q(nome_completo__icontains=termo) | Q(telefone__icontains=termo)
     )
 
